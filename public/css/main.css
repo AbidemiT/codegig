@@ -1,0 +1,160 @@
+body {
+  font-family: 'Segoe UI';
+  font-size: 18px;
+  color: black;
+}
+
+nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr; 
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bolder;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: right;
+  margin-right: 70px;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list > .menu {
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+.list > .menu:hover {
+  padding: 10px;
+  background-color: rgba(131, 122, 122, 0.76);
+  border-radius: 5px;
+}
+
+.desc {
+  display:block;
+  margin-left:20px;
+  text-align:left;
+  padding: 3px;
+}
+
+.error {
+  border: 2px grey solid;
+  width: 35vw;
+  margin: 0 auto;
+}
+
+input,textarea {
+  padding: 5px;
+  width:31vw;
+  margin: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+button {
+  width:30vw;
+  font-weight: bold;
+  margin-left: -6px;
+  padding: 11px;
+  border: none;
+  border-radius:5px;
+  color: white;
+  background-color: #38c958;
+  cursor: pointer;
+}
+button:hover {
+  width:30vw;
+  font-weight: bold;
+  margin-left: -6px;
+  padding: 11px;
+  border: none;
+  border-radius:5px;
+  color: white;
+  background-color: #38c957c9;
+  cursor: pointer;
+}
+
+.container {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.gig {
+  background-color: #89928b;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.description {
+  text-align: left;
+}
+.tech {
+  font-weight: bold;
+}
+.apply {
+  background-color: #38c958;
+  margin: 10px;
+  padding: 8px;
+  border-radius: 5px;
+}
+.apply:hover {
+  background-color: #38c957b0;
+  margin: 10px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+#gig-form {
+  width:35vw;
+  background-color: #89928b;
+  padding: 5px;
+  margin: 0 auto;
+  border-radius:5px;
+  text-align: center;
+}
+
+@media only screen and  (max-width: 500px) {
+
+  ul {
+    list-style-type: none;
+    text-align: right;
+    margin-right: 40px;
+  }
+  
+ .logo {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 5px;
+    margin-left: 20px;
+  }
+
+  .list > a {
+    padding: 5px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+  }
+  .list > a:hover {
+    padding: 5px;
+    background-color: rgb(131, 122, 122);
+    border-radius: 5px;
+    font-size: 18px;
+  }
+}
