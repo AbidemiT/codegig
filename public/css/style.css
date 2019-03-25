@@ -94,32 +94,6 @@ button:hover {
   margin: 0 auto;
 }
 
-.gig {
-  background-color: #89928b;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
-.description {
-  text-align: left;
-}
-.tech {
-  font-weight: bold;
-}
-.apply {
-  background-color: #38c958;
-  margin: 10px;
-  padding: 8px;
-  border-radius: 5px;
-}
-.apply:hover {
-  background-color: #38c957b0;
-  margin: 10px;
-  padding: 8px;
-  border-radius: 5px;
-}
-
 h1, p {
   text-align: center;
 }
@@ -150,5 +124,10 @@ h1, p {
     background-color: rgb(131, 122, 122);
     border-radius: 5px;
     font-size: 18px;
+  }
+
+  #gigs {
+    display: grid;
+grid-template-columns: 1fr;
   }
 }
