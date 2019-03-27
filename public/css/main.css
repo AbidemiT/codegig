@@ -17,6 +17,11 @@ nav {
   margin-left: 30px;
 }
 
+#gigs {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 ul {
   list-style-type: none;
   text-align: right;
@@ -28,6 +33,10 @@ li {
 }
 
 a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
   text-decoration: none;
   color: inherit;
 }
@@ -123,7 +132,6 @@ h1, p {
 
 #gig-form {
   width:35vw;
-  background-color: #89928b;
   padding: 5px;
   margin: 0 auto;
   border-radius:5px;

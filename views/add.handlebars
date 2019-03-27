@@ -8,30 +8,32 @@
       </div>
     {{/each}}
 
-    <form action="/gigs/add" id="gig-form" method="POST">
-      <div class="input-group">
-        <label for="title" class="desc">Gig Title:</label>
-        <input type="text" name="title" id="title" class="input-box" placeholder="Small Wordpess Website, React Developer" maxlength="100" value={{title}}>
+    <form action="/gigs/add" class="AVAST_PAM_signupform AVAST_PAM_loginform" id="gig-form" method="POST">
+    <fieldset>
+      <div class="form-group row">
+        <label for="title" class="col-form-label">Gig Title:</label>
+        <input type="text" name="title" id="title" class="form-control form-control-sm" placeholder="Small Wordpess Website, React Developer" maxlength="100" value={{title}}>
       </div>
-      <div class="input-group">
-        <label for="technologies" class="desc">Technologies Needed:</label>
-        <input type="text" name="technologies" id="technologies" class="input-box" placeholder="javascript, php, python" maxlength="100" value={{technologies}}>
+      <div class="form-group row">
+        <label for="technologies" class="col-form-label">Technologies Needed:</label>
+        <input type="text" name="technologies" id="technologies" class="form-control form-control-sm" placeholder="javascript, php, python" maxlength="100" value={{technologies}}>
       </div>
-      <div class="input-group">
-        <label for="budget" class="desc">Budget (Leave blank for Unknown):</label>
-        <input type="text" name="budget" id="budget" value={{budget}}>
+      <div class="form-group row">
+        <label for="budget" class="col-form-label">Budget (Leave blank for Unknown):</label>
+        <input type="text" class="form-control form-control-sm" name="budget" id="budget" value={{budget}}>
       </div>
-      <div class="input-group">
-        <label for="description" class="desc">Gig Description:</label>
-        <textarea cols="55" rows="10" name="description">{{description}}</textarea>
+      <div class="form-group row">
+        <label for="description" class="col-form-label">Gig Description:</label>
+        <textarea cols="55" class="form-control form-control-sm" rows="5" name="description">{{description}}</textarea>
       </div>
-      <div class="input-group">
-        <label for="contact_email" class="desc">
+      <div class="form-group row">
+        <label for="contact_email" class="col-form-label">
           Contact Email:
         </label>
-        <input type="email" name="contact_email" id="contact_email" placeholder="Enter an email">
+        <input type="email" class="form-control form-control-sm" name="contact_email" id="contact_email" placeholder="Enter an email">
       </div>
       <button>Add Gig</button>
+      </fieldset>
     </form>
   </div>
 </section>

@@ -1,20 +1,21 @@
-<section id="gigs" class="container">
   <h1>All gigs</h1>
+<section id="gigs" class="container">
 
   {{#each gigs}}
-  <div class="gig">
-    <h3>{{title}}</h3>
-    <p class="description">{{description}}</p>
+  <div class="card border-light mb-3" style="max-width: 20rem;">
+  <div class="card-header">{{title}}</div>
+  <div class="card-body">
+    <h4 class="card-title"></h4>
+    <p class="card-text">{{description}}</p>
     <ul>
       <li class="list">Budget: {{budget}}</li>
-      <li class="list"><a class="apply" href="mailto:{{contact_email}}">Apply Now</a></li>
+      <li class="list"><a class="btn btn-primary btn-sm" href="mailto:{{contact_email}}">Apply Now</a></li>
     </ul>
-    <div class="technology">
-      <small>
+    <small>
         Technologies Needed: <span class="tech">{{technologies}}</>
       </small>
-    </div>
   </div>
+</div>
 
   {{else}}
   <p>No gigs available</p>
